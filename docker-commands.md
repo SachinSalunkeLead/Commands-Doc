@@ -73,7 +73,7 @@ docker rm $(docker ps -a -q --filter ancestor=nginx)
 
 # Restart containers with label "env=dev"
 docker restart $(docker ps -q --filter "label=env=dev")
-
+```
 
 ---
 
