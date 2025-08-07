@@ -188,7 +188,6 @@ docker restart $(docker ps -q --filter "label=env=dev")
 | `docker run --rm -v myvolume:/volume -v $(pwd):/backup ubuntu tar czf /backup/vol.tar.gz -C /volume .` | Backup a volume to host |
 | `docker run --rm -v myvolume:/volume -v $(pwd):/backup ubuntu tar xzf /backup/vol.tar.gz -C /volume` | Restore a volume from host archive |
 
-
 ---
 
 ## 🌐 Network Commands
@@ -321,7 +320,6 @@ A cheat sheet for working with `docker-compose`, used to define and manage multi
 | Named volumes | Recommended to avoid data loss across `up`/`down` cycles |
 | Use `depends_on` | Ensure services start in order (not a wait-for-ready mechanism) |
 | Combine Compose with `.dockerignore` | Optimize builds by ignoring unnecessary files |
-
 
 
 ---
